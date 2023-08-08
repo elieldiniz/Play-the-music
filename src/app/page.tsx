@@ -1,6 +1,8 @@
 
-import { MdOutlineLibraryMusic } from "react-icons/md"
+import { MdOutlineLibraryMusic,MdOutlinePlaylistAdd, MdOutlineReplay} from "react-icons/md"
 import { FcRating, FcHeadset, FcMusic } from "react-icons/fc";
+import { ImPlay2 } from "react-icons/im";
+import { IoPlaySkipBackCircleSharp,IoPlaySkipForwardCircle } from "react-icons/io5";
 
 
 import Image from 'next/image'
@@ -63,8 +65,52 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <footer className="bg-gradient-to-r from-slate-800 to-green-950 border-t border-slate-700 p-6">
-        footer
+      <footer className="bg-gradient-to-r from-slate-800 to-green-950 border-t border-slate-700 p-10 flex justify-between">
+        <div className="flex gap-4">
+        <Image
+            src="/itunes.png"
+            width={50}
+            height={50}
+            alt="Home"
+            />
+            <div>
+            <h1>Dont Surrender</h1>
+            <h2 className="text-xs text-inherit">Egzond,EMM</h2>
+            </div>
+            
+            
+            
+
+        </div>
+
+        <div>
+          <div>
+            <ul className="flex gap-10">
+              <li>
+                <MdOutlineReplay/>
+              </li>
+              <li>
+                <IoPlaySkipBackCircleSharp/>
+              </li>
+              <li className="">
+                <ImPlay2/>
+              </li>
+              <li>
+                <IoPlaySkipForwardCircle/>
+              </li>
+              <li>
+                <MdOutlinePlaylistAdd/>
+              </li>
+            </ul>
+          </div>
+          <div>
+            msc2
+          </div>
+        </div>
+
+        <div>
+          outros
+        </div>
       </footer>
     </div>
   )
